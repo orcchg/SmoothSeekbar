@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 
+    <color name="default_screen_bg">#20324a</color>
+    <color name="rounded_container_bg">#80000000</color>
+    <color name="rounded_container_border">#3b3f44</color>
+    <color name="light_gray_header_color">#646663</color>
+    
+    <color name="counter_text_bg">#646663</color>
+    <color name="list_background">#000000</color>
+    <color name="list_background_pressed">#ff0000</color>
+    <color name="list_divider">#000000</color>
+    
+    <color name="seekbar_rest">#989898</color>
+    <color name="seekbar_progress">#3333FF</color>
+    <color name="seekbar_cursor">#404040</color>
+    <color name="seekbar_label">#ffffff</color>
+ 
+</resources>

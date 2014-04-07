@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<declare-styleable name="SmoothSeekBar">
+	    <attr name="vertical_padding" format="dimension" />
+	    <attr name="horizontal_padding" format="dimension" />
+	    <attr name="box_height" format="dimension" />
+	    <attr name="box_width" format="dimension" />
+	    <attr name="cursor_height" format="dimension" />
+	    <attr name="cursor_width" format="dimension" />
+		<attr name="max" format="dimension" />
+		<attr name="total_labels" format="integer" />
+		<attr name="progress" format="integer" />
+	</declare-styleable>
+</resources>
