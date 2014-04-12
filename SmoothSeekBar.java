@@ -66,7 +66,7 @@ public class SmoothSeekBar extends View {
     m_horizontal_padding = attributes_array.getDimension(R.styleable.SmoothSeekBar_horizontal_padding, 0.0f);
     
     m_cursor_rect_height = attributes_array.getDimension(R.styleable.SmoothSeekBar_cursor_height, 25.0f);
-    m_cursor_rect_width = attributes_array.getDimension(R.styleable.SmoothSeekBar_cursor_width, 10.0f);
+    m_cursor_rect_width = attributes_array.getDimension(R.styleable.SmoothSeekBar_cursor_width, 18.0f);
     m_box_rect_height = attributes_array.getDimension(R.styleable.SmoothSeekBar_box_height, 15.0f);
     m_box_rect_width = attributes_array.getDimension(R.styleable.SmoothSeekBar_box_width, 300.0f);
     m_gap = (m_cursor_rect_height - m_box_rect_height) * 0.5f;
@@ -115,6 +115,7 @@ public class SmoothSeekBar extends View {
           // user touch draggable box - start dragging
           getParent().requestDisallowInterceptTouchEvent(true);
           m_is_dragging = true;
+          m_listener.onStartTrackingTouch(this);
         }
         break;
       case MotionEvent.ACTION_MOVE:  
@@ -133,6 +134,7 @@ public class SmoothSeekBar extends View {
             // flip to the right label
             flip(nearest_left_label + 1);
           }
+          m_listener.onStopTrackingTouch(this);
         }
         break;
     }
