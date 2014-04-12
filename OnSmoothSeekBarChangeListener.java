@@ -1,4 +1,4 @@
-package com.samsung.atlas.drawer;
+package maxa.orcchg.smoothseekbar;
 
 public interface OnSmoothSeekBarChangeListener {
   public void onProgressChanged(SmoothSeekBar seekBar, int progress, boolean fromUser);

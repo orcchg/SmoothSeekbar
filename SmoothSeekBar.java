@@ -2,9 +2,9 @@
  *   Author: Maxim Alov <m.alov@samsung.com>
  */
 
-package com.samsung.atlas.drawer;
+package maxa.orcchg.smoothseekbar;
 
-import com.samsung.atlas.depthfusion.R;
+import maxa.orcchg.smoothseekbar.R;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

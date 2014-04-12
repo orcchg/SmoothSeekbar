@@ -1,6 +1,6 @@
-xmlns:samsung="http://schemas.android.com/apk/res/com.samsung.atlas.atlas3dv2"
+xmlns:samsung="http://schemas.android.com/apk/res/maxa.orcchg.smoothseekbar"
 
-<com.samsung.atlas.drawer.SmoothSeekBar 
+<maxa.orcchg.smoothseekbar.SmoothSeekBar 
 	        android:id="@+id/seekbar"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
