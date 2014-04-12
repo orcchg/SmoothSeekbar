@@ -76,12 +76,12 @@ public class SmoothSeekBar extends View {
     m_total_labels = attributes_array.getInteger(R.styleable.SmoothSeekBar_total_labels, 10);
     attributes_array.recycle();
     
-    m_position = m_horizontal_padding + m_current_relative_position;
     m_max_position = m_horizontal_padding + m_max_relative_progress;
     m_is_dragging = false;
     
     m_label_gap = m_max_relative_progress / m_total_labels;
     m_current_relative_position = m_progress * m_label_gap;
+    m_position = m_horizontal_padding + m_current_relative_position;
   }
   
   public void setMax(int max) {
