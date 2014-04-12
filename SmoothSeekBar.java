@@ -21,7 +21,7 @@ import android.graphics.Paint.Style;
 
 
 public class SmoothSeekBar extends View {
-  private static final String TAG = "AtlasDFj_seekbar";
+  private static final String TAG = "seekbar";
   private static Integer height = 100;
   private OnSmoothSeekBarChangeListener m_listener;
   
