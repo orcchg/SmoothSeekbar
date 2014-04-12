@@ -1,0 +1,33 @@
+xmlns:samsung="http://schemas.android.com/apk/res/com.samsung.atlas.atlas3dv2"
+
+<com.samsung.atlas.drawer.SmoothSeekBar 
+	        android:id="@+id/seekbar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        samsung:vertical_padding="0dp"
+	        samsung:horizontal_padding="5dp"
+	        samsung:box_height="15dp"
+	        samsung:box_width="@dimen/drawer_width_minus"
+	        samsung:cursor_height="25dp"
+	        samsung:cursor_width="18dp"
+	        samsung:max="@dimen/drawer_width_minus"
+	        samsung:total_labels="5"
+	        samsung:progress="2" />
+
+
+
+
+
+m_seekbar = (SmoothSeekBar) layout.findViewById(R.id.drawer_menu).findViewById(R.id.seekbar_point_cloud_layout).findViewById(R.id.seekbar);
+m_seekbar.setMax(AtlasV2StartActivity.resources.getInteger(R.integer.seekbar_point_cloud_total_labels));
+m_seekbar.setProgress(AtlasV2StartActivity.resources.getInteger(R.integer.seekbar_point_cloud_default_progress));
+
+m_seekbar.setOnSmoothSeekBarChangeListener(new OnSmoothSeekBarChangeListener() {
+      @Override
+      public void onProgressChanged(SmoothSeekBar seekBar, int progress, boolean fromUser) {}
+      @Override
+      public void onStartTrackingTouch(SmoothSeekBar seekBar) {}
+      @Override
+      public void onStopTrackingTouch(SmoothSeekBar seekBar) {}
+    });
+  }
