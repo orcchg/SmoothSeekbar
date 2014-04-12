@@ -198,7 +198,7 @@ public class SmoothSeekBar extends View {
     }
     float actual_position = event.getX() - m_horizontal_padding;
     if (actual_position >= 0.0f) {
-      m_current_relative_position = Math.round(actual_position);
+      m_current_relative_position = actual_position;
     } else {
       m_current_relative_position = 0.0f;
     }
