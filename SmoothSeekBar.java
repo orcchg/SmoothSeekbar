@@ -99,6 +99,10 @@ public class SmoothSeekBar extends View {
   public void setOnSmoothSeekBarChangeListener(OnSmoothSeekBarChangeListener listener) {
     m_listener = listener;
   }
+
+  public int getMax() {
+    return m_total_labels;
+  }
   
   public int getProgress() {
     return m_progress;
